@@ -16,6 +16,10 @@ jobs:
         run: |
           npm install
 
+      - name: Update npm
+        run: |
+          npm update
+
       - name: Build
         run: |
           npm run build
