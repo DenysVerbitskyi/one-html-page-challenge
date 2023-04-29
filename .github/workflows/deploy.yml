@@ -12,13 +12,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install dependencies
+      - name: Init npm
+        run: |
+          npm init
+
+      - name: Install npm
         run: |
           npm install
-
-      - name: Update npm
-        run: |
-          npm update
 
       - name: Build
         run: |
